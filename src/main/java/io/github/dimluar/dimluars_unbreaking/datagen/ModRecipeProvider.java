@@ -542,6 +542,79 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 Items.DIAMOND_BOOTS
                         ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                         .save(output, getItemName(Items.DIAMOND_BOOTS));
+
+                // Animal Armors
+
+                shaped(RecipeCategory.COMBAT, Items.COPPER_NAUTILUS_ARMOR)
+                        .pattern("aa ")
+                        .pattern("aa ")
+                        .pattern("aaa")
+                        .define('a', Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                        .save(output);
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.LEATHER_HORSE_ARMOR),
+                                this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.COPPER_HORSE_ARMOR
+                        ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                        .save(output, getItemName(Items.COPPER_HORSE_ARMOR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.COPPER_NAUTILUS_ARMOR),
+                                this.tag(ItemTags.IRON_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.IRON_NAUTILUS_ARMOR
+                        ).unlocks(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .save(output, getItemName(Items.IRON_NAUTILUS_ARMOR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.COPPER_HORSE_ARMOR),
+                                this.tag(ItemTags.IRON_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.IRON_HORSE_ARMOR
+                        ).unlocks(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .save(output, getItemName(Items.IRON_HORSE_ARMOR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_NAUTILUS_ARMOR),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_NAUTILUS_ARMOR
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_NAUTILUS_ARMOR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_HORSE_ARMOR),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_HORSE_ARMOR
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_HORSE_ARMOR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_NAUTILUS_ARMOR),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_NAUTILUS_ARMOR
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_NAUTILUS_ARMOR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_HORSE_ARMOR),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_HORSE_ARMOR
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_HORSE_ARMOR));
             }
         };
     }

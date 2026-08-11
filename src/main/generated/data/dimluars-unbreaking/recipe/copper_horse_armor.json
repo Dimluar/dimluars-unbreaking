@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:leather_horse_armor",
+  "result": {
+    "id": "minecraft:copper_horse_armor"
+  },
+  "template": "dimluars-unbreaking:copper_upgrade_smithing_template"
+}
