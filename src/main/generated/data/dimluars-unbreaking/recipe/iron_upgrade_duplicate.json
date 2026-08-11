@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "dimluars-unbreaking:iron_upgrade_smithing_template",
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot"
+  ],
+  "result": {
+    "count": 2,
+    "id": "dimluars-unbreaking:iron_upgrade_smithing_template"
+  }
+}

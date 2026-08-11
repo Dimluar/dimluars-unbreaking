@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "a": "minecraft:gold_ingot",
+    "b": "minecraft:diamond",
+    "c": "minecraft:diamond_block"
+  },
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "result": {
+    "id": "dimluars-unbreaking:diamond_upgrade_smithing_template"
+  }
+}

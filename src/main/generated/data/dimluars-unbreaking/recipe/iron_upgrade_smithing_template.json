@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "a": "minecraft:copper_ingot",
+    "b": "minecraft:iron_ingot",
+    "c": "minecraft:iron_block"
+  },
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "result": {
+    "id": "dimluars-unbreaking:iron_upgrade_smithing_template"
+  }
+}
