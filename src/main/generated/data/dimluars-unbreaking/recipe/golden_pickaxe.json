@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:gold_tool_materials",
+  "base": "minecraft:iron_pickaxe",
+  "result": {
+    "id": "minecraft:golden_pickaxe"
+  },
+  "template": "dimluars-unbreaking:gold_upgrade_smithing_template"
+}

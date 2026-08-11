@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:gold_tool_materials",
+  "base": "minecraft:iron_shovel",
+  "result": {
+    "id": "minecraft:golden_shovel"
+  },
+  "template": "dimluars-unbreaking:gold_upgrade_smithing_template"
+}

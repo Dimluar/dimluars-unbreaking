@@ -358,6 +358,98 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 Items.IRON_BOOTS
                         ).unlocks(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                         .save(output, getItemName(Items.IRON_BOOTS));
+
+                // Gold Tier
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_PICKAXE),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.GOLDEN_PICKAXE
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_PICKAXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_AXE),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.GOLDEN_AXE
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_AXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_SHOVEL),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.GOLDEN_SHOVEL
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_SHOVEL));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_HOE),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.GOLDEN_HOE
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_HOE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_SWORD),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_SWORD
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_SWORD));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_SPEAR),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_SPEAR
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_SPEAR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_HELMET),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_HELMET
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_HELMET));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_CHESTPLATE),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_CHESTPLATE
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_CHESTPLATE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_LEGGINGS),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_LEGGINGS
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_LEGGINGS));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.IRON_BOOTS),
+                                this.tag(ItemTags.GOLD_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.GOLDEN_BOOTS
+                        ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .save(output, getItemName(Items.GOLDEN_BOOTS));
             }
         };
     }

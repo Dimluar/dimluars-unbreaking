@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:gold_tool_materials",
+  "base": "minecraft:iron_axe",
+  "result": {
+    "id": "minecraft:golden_axe"
+  },
+  "template": "dimluars-unbreaking:gold_upgrade_smithing_template"
+}
