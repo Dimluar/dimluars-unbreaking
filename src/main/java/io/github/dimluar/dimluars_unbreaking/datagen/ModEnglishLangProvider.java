@@ -19,6 +19,5 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE, "Iron Upgrade");
         translationBuilder.add(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE, "Gold Upgrade");
         translationBuilder.add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE, "Diamond Upgrade");
-
     }
 }
