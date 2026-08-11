@@ -4,6 +4,7 @@ import io.github.dimluar.dimluars_unbreaking.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -13,7 +14,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     }
 
     @Override
-    public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
+    public void generateTranslations(HolderLookup.@NonNull Provider registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE, "Stone Upgrade");
         translationBuilder.add(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE, "Copper Upgrade");
         translationBuilder.add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE, "Iron Upgrade");
