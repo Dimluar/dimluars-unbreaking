@@ -450,6 +450,98 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 Items.GOLDEN_BOOTS
                         ).unlocks(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                         .save(output, getItemName(Items.GOLDEN_BOOTS));
+
+                // Diamond Tier
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_PICKAXE),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.DIAMOND_PICKAXE
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_PICKAXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_AXE),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.DIAMOND_AXE
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_AXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_SHOVEL),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.DIAMOND_SHOVEL
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_SHOVEL));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_HOE),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.TOOLS,
+                                Items.DIAMOND_HOE
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_HOE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_SWORD),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_SWORD
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_SWORD));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_SPEAR),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_SPEAR
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_SPEAR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_HELMET),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_HELMET
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_HELMET));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_CHESTPLATE),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_CHESTPLATE
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_CHESTPLATE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_LEGGINGS),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_LEGGINGS
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_LEGGINGS));
+
+                SmithingTransformRecipeBuilder.smithing(
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(Items.GOLDEN_BOOTS),
+                                this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
+                                RecipeCategory.COMBAT,
+                                Items.DIAMOND_BOOTS
+                        ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                        .save(output, getItemName(Items.DIAMOND_BOOTS));
             }
         };
     }
