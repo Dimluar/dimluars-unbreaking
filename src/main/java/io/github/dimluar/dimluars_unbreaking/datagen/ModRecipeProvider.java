@@ -615,6 +615,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 Items.DIAMOND_HORSE_ARMOR
                         ).unlocks(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                         .save(output, getItemName(Items.DIAMOND_HORSE_ARMOR));
+
+                // Smithing Table
+
+                shaped(RecipeCategory.MISC, Items.SMITHING_TABLE)
+                        .pattern("aa")
+                        .pattern("bb")
+                        .pattern("bb")
+                        .define('a', Items.SMOOTH_STONE)
+                        .define('b', ItemTags.PLANKS)
+                        .unlockedBy(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                        .save(output);
             }
         };
     }
