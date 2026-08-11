@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "dimluars-unbreaking",
+	"version": "${version}",
+	"name": "Dimluar's Unbreaking",
+	"description": "With this mod you exchange progression speed for unbreakable tools.",
+	"authors": [
+		"Dimluar"
+	],
+	"contact": {
+		"sources": "https://github.com/Dimluar/dimluars-unbreaking"
+	},
+	"license": "MIT",
+	"icon": "assets/dimluars-unbreaking/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.dimluar.dimluars_unbreaking.DimluarSUnbreaking"
+		],
+		"client": [
+			"io.github.dimluar.dimluars_unbreaking.DimluarSUnbreakingClient"
+		],
+		"fabric-datagen": [
+			"io.github.dimluar.dimluars_unbreaking.DimluarSUnbreakingDataGenerator"
+		]
+	},
+	"mixins": [
+		"dimluars-unbreaking.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
