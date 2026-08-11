@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:stone_tool_materials",
+  "base": "minecraft:wooden_pickaxe",
+  "result": {
+    "id": "minecraft:stone_pickaxe"
+  },
+  "template": "dimluars-unbreaking:stone_upgrade_smithing_template"
+}

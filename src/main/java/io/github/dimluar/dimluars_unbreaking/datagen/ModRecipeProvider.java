@@ -8,9 +8,12 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.SmithingTransformRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,6 +28,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
+
+                // Templates
 
                 shaped(RecipeCategory.MISC, ModItems.STONE_UPGRADE_SMITHING_TEMPLATE, 1)
                         .pattern("aba")
@@ -113,6 +118,62 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(Items.DIAMOND, 2)
                         .unlockedBy(getHasName(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), has(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
                         .save(output);
+
+                // Stone Tier
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.WOODEN_PICKAXE),
+                        this.tag(ItemTags.STONE_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.STONE_PICKAXE
+                ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output, getItemName(Items.STONE_PICKAXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.WOODEN_AXE),
+                        this.tag(ItemTags.STONE_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.STONE_AXE
+                ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output, getItemName(Items.STONE_AXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.WOODEN_SHOVEL),
+                        this.tag(ItemTags.STONE_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.STONE_SHOVEL
+                ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output, getItemName(Items.STONE_SHOVEL));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.WOODEN_HOE),
+                        this.tag(ItemTags.STONE_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.STONE_HOE
+                ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output, getItemName(Items.STONE_HOE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.WOODEN_SWORD),
+                        this.tag(ItemTags.STONE_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.STONE_SWORD
+                ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output, getItemName(Items.STONE_SWORD));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.STONE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.WOODEN_SPEAR),
+                        this.tag(ItemTags.STONE_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.STONE_SPEAR
+                ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output, getItemName(Items.STONE_SPEAR));
             }
         };
     }
