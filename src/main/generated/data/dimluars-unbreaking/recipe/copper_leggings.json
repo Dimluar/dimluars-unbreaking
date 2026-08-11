@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:leather_leggings",
+  "result": {
+    "id": "minecraft:copper_leggings"
+  },
+  "template": "dimluars-unbreaking:copper_upgrade_smithing_template"
+}

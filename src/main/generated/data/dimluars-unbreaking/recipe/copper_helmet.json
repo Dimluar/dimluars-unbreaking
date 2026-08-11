@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:leather_helmet",
+  "result": {
+    "id": "minecraft:copper_helmet"
+  },
+  "template": "dimluars-unbreaking:copper_upgrade_smithing_template"
+}

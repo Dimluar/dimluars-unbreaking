@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:leather_chestplate",
+  "result": {
+    "id": "minecraft:copper_chestplate"
+  },
+  "template": "dimluars-unbreaking:copper_upgrade_smithing_template"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:stone_hoe",
+  "result": {
+    "id": "minecraft:copper_hoe"
+  },
+  "template": "dimluars-unbreaking:copper_upgrade_smithing_template"
+}

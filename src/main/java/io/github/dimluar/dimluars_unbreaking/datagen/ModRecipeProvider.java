@@ -174,6 +174,98 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Items.STONE_SPEAR
                 ).unlocks(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
                 .save(output, getItemName(Items.STONE_SPEAR));
+
+                // Copper Tier
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.STONE_PICKAXE),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.COPPER_PICKAXE
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_PICKAXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.STONE_AXE),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.COPPER_AXE
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_AXE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.STONE_SHOVEL),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.COPPER_SHOVEL
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_SHOVEL));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.STONE_HOE),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.TOOLS,
+                        Items.COPPER_HOE
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_HOE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.STONE_SWORD),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.COPPER_SWORD
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_SWORD));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.STONE_SPEAR),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.COPPER_SPEAR
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_SPEAR));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.LEATHER_HELMET),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.COPPER_HELMET
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_HELMET));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.LEATHER_CHESTPLATE),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.COPPER_CHESTPLATE
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_CHESTPLATE));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.LEATHER_LEGGINGS),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.COPPER_LEGGINGS
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_LEGGINGS));
+
+                SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.COPPER_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(Items.LEATHER_BOOTS),
+                        this.tag(ItemTags.COPPER_TOOL_MATERIALS),
+                        RecipeCategory.COMBAT,
+                        Items.COPPER_BOOTS
+                ).unlocks(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output, getItemName(Items.COPPER_BOOTS));
             }
         };
     }
