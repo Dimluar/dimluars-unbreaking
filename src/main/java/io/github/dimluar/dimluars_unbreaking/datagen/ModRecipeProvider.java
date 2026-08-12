@@ -596,7 +596,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output, getItemName(Items.GOLDEN_HORSE_ARMOR));
 
                 SmithingTransformRecipeBuilder.smithing(
-                                Ingredient.of(ModItems.GOLD_UPGRADE_SMITHING_TEMPLATE),
+                                Ingredient.of(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
                                 Ingredient.of(Items.GOLDEN_NAUTILUS_ARMOR),
                                 this.tag(ItemTags.DIAMOND_TOOL_MATERIALS),
                                 RecipeCategory.COMBAT,
