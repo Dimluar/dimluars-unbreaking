@@ -4,9 +4,7 @@ import io.github.dimluar.dimluars_unbreaking.DimluarSUnbreaking;
 import io.github.dimluar.dimluars_unbreaking.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.network.chat.Component;
 import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
