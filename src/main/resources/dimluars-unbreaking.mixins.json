@@ -3,9 +3,10 @@
   "package": "io.github.dimluar.dimluars_unbreaking.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "AnvilMenuMixin",
+    "ArmorMaterialMixin",
     "ItemStackMixin",
-    "ToolMaterialMixin",
-    "ArmorMaterialMixin"
+    "ToolMaterialMixin"
   ],
   "injectors": {
     "defaultRequire": 1
