@@ -1,7 +1,22 @@
 {
+  "item.dimluars-unbreaking.apply.tooltip": "Applies to:",
+  "item.dimluars-unbreaking.copper_equipment.tooltip": " Copper Equipment",
+  "item.dimluars-unbreaking.copper_material.tooltip": " Copper Ingot",
   "item.dimluars-unbreaking.copper_upgrade_smithing_template": "Copper Upgrade",
+  "item.dimluars-unbreaking.diamond_material.tooltip": " Diamond",
   "item.dimluars-unbreaking.diamond_upgrade_smithing_template": "Diamond Upgrade",
+  "item.dimluars-unbreaking.empty.tooltip": "",
+  "item.dimluars-unbreaking.gold_equipment.tooltip": " Golden Equipment",
+  "item.dimluars-unbreaking.gold_material.tooltip": " Gold Ingot",
   "item.dimluars-unbreaking.gold_upgrade_smithing_template": "Gold Upgrade",
+  "item.dimluars-unbreaking.ingredient.tooltip": "Ingredients:",
+  "item.dimluars-unbreaking.iron_equipment.tooltip": " Iron Equipment",
+  "item.dimluars-unbreaking.iron_material.tooltip": " Iron Ingot",
   "item.dimluars-unbreaking.iron_upgrade_smithing_template": "Iron Upgrade",
-  "item.dimluars-unbreaking.stone_upgrade_smithing_template": "Stone Upgrade"
+  "item.dimluars-unbreaking.leather_equipment.tooltip": " Leather Equipment",
+  "item.dimluars-unbreaking.stone_equipment.tooltip": " Stone Equipment",
+  "item.dimluars-unbreaking.stone_material.tooltip": " Cobblestone Variants",
+  "item.dimluars-unbreaking.stone_upgrade_smithing_template": "Stone Upgrade",
+  "item.dimluars-unbreaking.template.tooltip": "Smithing Template",
+  "item.dimluars-unbreaking.wood_equipment.tooltip": " Wooden Equipment"
 }

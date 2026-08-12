@@ -1,6 +1,7 @@
 package io.github.dimluar.dimluars_unbreaking;
 
 import io.github.dimluar.dimluars_unbreaking.item.ModItems;
+import io.github.dimluar.dimluars_unbreaking.util.ModComponents;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -15,6 +16,7 @@ public class DimluarSUnbreaking implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
+        ModComponents.registerModComponents();
     }
 
     public static Identifier id(String path) {
