@@ -2,4 +2,4 @@
 
 ## Description
 
-This mod makes progression slower, but in exchange durability is removed from the game.
+This fabric mod makes progression slower, but in exchange durability is removed from the game.
